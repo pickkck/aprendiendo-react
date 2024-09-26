@@ -2,7 +2,7 @@ import { useState } from 'react';
 import PropTypes from 'prop-types';
 
 
-export function TwitterFollowCard({children, userName="unknown", formatUsername, initialIsFollowing=false}) {
+export function TwitterFollowCard({ children, userName="unknown", formatUsername, initialIsFollowing=false }) {
   const [isFollowing, setIsFollowing] = useState(initialIsFollowing)
   
   const imgSrc = `https://unavatar.io/${userName}`
